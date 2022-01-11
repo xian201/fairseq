@@ -341,7 +341,7 @@ def get_valid_stats(args, trainer, stats):
     return stats
 
 
-def cli_main(modify_parser=None):
+def cli_main(modify_parser=None):  #start entry
     parser = options.get_training_parser()
     args = options.parse_args_and_arch(parser, modify_parser=modify_parser)
     if args.profile:
